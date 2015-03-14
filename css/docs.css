@@ -203,7 +203,7 @@ a {
 
     /* Move the layout over so we can fit the nav + list in on the left */
     #layout {
-        padding-left:500px; /* "left col (nav + list)" width */
+        padding-left:350px; /* "left col (nav + list)" width */
         position: relative;
     }
 
@@ -215,7 +215,7 @@ a {
         overflow: auto;
     }
     #nav {
-        margin-left:-500px; /* "left col (nav + list)" width */
+        margin-left:-350px; /* "left col (nav + list)" width */
         width:150px;
         height: 100%;
     }
