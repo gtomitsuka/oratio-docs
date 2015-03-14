@@ -12,7 +12,7 @@
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-  <link rel="stylesheet" href="css/layouts/docs.css">
+  <link rel="stylesheet" href="css/docs.css">
 </head>
 <body>
   <div id="layout" class="content pure-g">
@@ -76,6 +76,21 @@
             </div>
         </div>
     </div>
-</div>
+  </div>
+
+
+  <script src="http://yui.yahooapis.com/3.17.2/build/yui/yui-min.js"></script>
+  <script>
+    YUI().use('node-base', 'node-event-delegate', function (Y) {
+
+      var menuButton = Y.one('.nav-menu-button');
+      var nav = Y.one('#nav');
+
+      // Setting the active class name expands the menu vertically on small screens.
+      menuButton.on('click', function (e) {
+        nav.toggleClass('active');
+      });
+    });
+</script>
 </body>
 </html>
