@@ -2,14 +2,14 @@
 <html>
 <head>
   <title>Oratio.IO Docs</title>
-  
+
   <meta charset="UTF-8">
-  
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Oratio.IO is the most advanced all-in-one platform ever developed. Try it now!">
   <meta name="keywords" content="Forum, All, In, One, Chat, Platform, Advanced, Secure, Node.js">
   <meta name="author" content="Oratio Team">
-  
+
   <!-- Stylesheets -->
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
   <link rel="stylesheet" href="css/docs.min.css">
@@ -22,7 +22,7 @@
         <form action="http://meta.oratio.io/">
           <input type="submit" class="primary-button pure-button">Community</button>
         </form>
-      
+
       <div class="pure-menu">
         <ul class="pure-menu-list">
           <li class="pure-menu-item"><a href="#" class="pure-menu-link">Inbox <span class="email-count">(2)</span></a></li>
@@ -38,7 +38,7 @@
       </div>
     </div>
   </div>
-    
+
     <div id="main" class="pure-u-1">
         <div class="email-content">
             <div class="email-content-header pure-g">
@@ -80,6 +80,8 @@
 
 
   <script src="http://yui.yahooapis.com/3.17.2/build/yui/yui-min.js"></script>
-  <script src="js/docs.min.js"></script>
+  <script>
+  YUI().d("node-base","node-event-delegate",function(a){var b=a.a(".nav-menu-button"),c=a.a("#nav");b.b("click",function(){c.c("active")})});
+  </script>
 </body>
 </html>
