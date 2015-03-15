@@ -5,10 +5,19 @@ highlighter:      rouge
 # Permalinks
 permalink:        pretty
 
+# Authoring
+title : Oratio.io Docs
+tagline: Docs for Oratio.io
+author :
+  name : Gabriel Tomitsuka
+  email : gabriel.tomitsuka@montreus.com
+  github : gtomitsuka
+  
+
 # Server
 host:             0.0.0.0
 port:             9001
-url:              http://getbootstrap.com
+production_url:   http://docs.oratio.io
 encoding:         UTF-8
 
 # Custom vars
