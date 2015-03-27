@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oratio.io Docs</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Oratio.IO is the most advanced all-in-one platform ever developed. Try it now!">
+  <meta name="keywords" content="Forum, All, In, One, Chat, Platform, Advanced, Secure, Node.js">
+  <meta name="author" content="Oratio Team">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="css/docs.min.css">
+
+  <base href="../../">
+</head>
+<body>
+  <div id="layout" class="content pure-g">
+    <div id="nav" class="pure-u">
+      <a href="/" class="nav-menu-button">Oratio.io Docs</a>
+      <div class="nav-inner">
+      <div class="pure-menu">
+        <ul class="pure-menu-list">
+          <li class="pure-menu-item"><a href="/" class="pure-menu-link">Home</a></li>
+          <li class="pure-menu-heading">FAQ</li>
+          <li class="pure-menu-item"><a href="faq/" class="pure-menu-link">Oratio.io FAQ</a></li>
+          <li class="pure-menu-item"><a href="faq/mobile/" class="pure-menu-link">Mobile Apps</a></li>
+          <li class="pure-menu-item"><a href="faq/domains/" class="pure-menu-link">Custom Domains</a></li>
+          <li class="pure-menu-item"><a href="faq/billing/" class="pure-menu-link">Billing</a></li>
+          <li class="pure-menu-item"><a href="faq/security/" class="pure-menu-link">Security</a></li>
+          <li class="pure-menu-heading">APIs</li>
+          <li class="pure-menu-item"><a href="api/" class="pure-menu-link">Introduction</a></li>
+          <li class="pure-menu-item"><a href="api/REST/" class="pure-menu-link">REST API</a></li>
+          <li class="pure-menu-item"><a href="api/webhooks/" class="pure-menu-link">Webhooks<span class="email-count">(new)</span></a></li>
+          <li class="pure-menu-item"><a href="api/database/" class="pure-menu-link">Database API</a></li>
+          <li class="pure-menu-item"><a href="api/forum/" class="pure-menu-link">Forum API</a></li>
+          <li class="pure-menu-item"><a href="api/blog/" class="pure-menu-link">Blog API</a></li>
+          <li class="pure-menu-item"><a href="api/to-do/" class="pure-menu-link">To-Do List API</a></li>
+          <li class="pure-menu-item"><a href="api/javascript/" class="pure-menu-link">JavaScript API</a></li>
+          <li class="pure-menu-heading">Enterprise</li>
+          <li class="pure-menu-item"><a href="enterprise/setup/" class="pure-menu-link">Set Up</a></li>
+          <li class="pure-menu-item"><a href="enterprise/security/" class="pure-menu-link">Security</a></li>
+          <li class="pure-menu-heading">Modules</li>
+          <li class="pure-menu-item"><a href="modules/intro/" class="pure-menu-link">Introduction</a></li>
+          <li class="pure-menu-item"><a href="modules/system/" class="pure-menu-link">System Calls</a></li>
+          <li class="pure-menu-item"><a href="modules/database/" class="pure-menu-link">Database</a></li>
+          <li class="pure-menu-item"><a href="modules/security/" class="pure-menu-link">Security</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+    <div id="main" class="pure-u-1">
+        <div class="email-content">
+            <div class="email-content-header pure-g">
+                <div class="pure-u-1-2">
+                    <h1 class="email-content-title">Oratio.io Documentation</h1>
+                    <p class="email-content-subtitle">
+                        Last updated by someone on the <span>someday</span>
+                    </p>
+                </div>
+
+                <div class="email-content-controls pure-u-1-2">
+                    <button class="secondary-button pure-button">Suggestions</button>
+                    <button class="secondary-button pure-button">Discussions</button>
+                    <button class="secondary-button pure-button">Support</button>
+                </div>
+            </div>
+
+            <div class="email-content-body">
+              <h1>Title.</h1>
+              <p>Text</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+  <script src="http://yui.yahooapis.com/3.17.2/build/yui/yui-min.js"></script>
+  <script>
+      YUI().use('node-base', 'node-event-delegate', function (Y) {
+        var menuButton = Y.one('.nav-menu-button'),
+            nav        = Y.one('#nav');
+        // Setting the active class name expands the menu vertically on small screens.
+        menuButton.on('click', function (e) {
+            nav.toggleClass('active');
+        });
+        // Your application code goes here...
+    });
+  </script>
+</body>
+</html>
